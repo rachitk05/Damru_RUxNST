@@ -425,6 +425,7 @@ margin-bottom: 200px;
   .aboutus h1:hover{
     opacity: 1;
     transition: 0.8sec;
+    box-shadow: inset #53fa67;
   }
 .aboutus p {
     padding-right: 20px;
@@ -502,9 +503,60 @@ margin-bottom: 200px;
   }
   
   .theme p:hover{
-    color: #d3da0d;
+    color: #00a6ff;
     transition: 1.5s;
   }
+
+
+
+ .aboutus .h3date{
+  align-items: center;
+  padding: 5px 0px 5px 0px;
+  font-size: 1.3em;
+  }
+
+.spflower{
+  animation: rotation 1.7s linear infinite;
+  opacity: 1.2;
+}
+@keyframes rotation{
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+.regbtn{
+  text-decoration: none;
+  margin-left: 20%;
+  font-size: 1em;
+  font-weight: 700;
+  padding: 8px 17px;
+  width: 200px;
+  height: 60px;
+  color: #000;
+  background-color: #bfff00;
+  border-radius: 3px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  transition: 0.5s;
+  box-shadow: 0px 1px 1ch 3px #a4ff70;
+
+}
+.regbtn:hover{
+  background-color: #53fa67;
+  letter-spacing: 0.15em;
+  border-radius: 7px;
+  margin-left: 19%;
+  border: 3px #000000;
+  box-shadow: 0px 3px 3ch 3px #c66bf8;
+}
+
+
 
 
 /* Contact Us form */
@@ -517,15 +569,20 @@ margin-bottom: 200px;
     gap: 70px;
 }
 .contactus h1{
+  color: burlywood;
     font-size: 90px;
     font-weight: 900;
     margin: 0;
+    position: relative;
+    left: -20%;
 }
 .inputbox{
     position: relative;
     width: 400px;
 }
 .inputbox input{
+  position: relative;
+  left: -10%;
     width: 100%;
     height: 40px;
     padding: 10px;
@@ -583,7 +640,7 @@ margin-bottom: 200px;
 }
 .btn{
     margin-top: 1%;
-    margin-left: 45%;
+    margin-left: 65%;
     font-size: 25px;
     font-weight: 900;
     padding: 3px 10px;
@@ -599,11 +656,23 @@ margin-bottom: 200px;
 .btn:hover{
     background-color: #53fa67;
     letter-spacing: 0.15em;
-    border-radius: 10px;
+    border-radius: 4px;
     border: 3px #000000;
     box-shadow: 0px 3px 3ch 3px #c66bf8;
 }
 
 
 
- 
+ .sponsors{
+  display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+}
+.sponsors h1{
+  color: rgb(7, 209, 255);
+    font-size: 8vw;
+    font-weight: 900;
+    margin: 0;
+}
