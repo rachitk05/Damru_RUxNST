@@ -408,28 +408,35 @@ margin-bottom: 200px;
 
 
 /* About Us */
+.aboutuscontainer{
+  display: flex;
+  align-items: center;
+}
+.aboutusimg img
+{
+  width: 50vw;
+  padding-right: 10vw;
+  height: auto;
+}
 .aboutus {
-    width: fit-content;
     color: #ffffff;
     position: relative;
-    margin-left: 50%;
+    padding-right: 5vw;
   }
 
   
   .aboutus h1 { 
-    width: fit-content;
-    opacity: 0.8;
+    opacity: 0.9;
     font-size: 6em;
     color: #2ddb98;
   }
   .aboutus h1:hover{
     opacity: 1;
-    transition: 0.8sec;
-    box-shadow: inset #53fa67;
+    transition: 0.8sec;;
+
   }
 .aboutus p {
     padding-right: 20px;
-    width:auto;
     max-width: 600px;
     font-weight: 250;
     font-size: 1.7em;
@@ -438,7 +445,7 @@ margin-bottom: 200px;
   }
   
   .aboutus p:hover{
-    color: #ffffff;
+    color: #ffe100;
     transition: 1.5s;
   }
 .aboutusatag {
@@ -453,7 +460,7 @@ margin-bottom: 200px;
     position: relative;
     cursor: pointer;
     font-weight: 700;
-    width: fit-content;
+
   }
   
   .aboutusatag:hover {
@@ -465,7 +472,6 @@ margin-bottom: 200px;
 
   .theme {
     margin-top: 400px;
-    width: fit-content;
     margin-left: 10%;
     color: #ffffff;
     position: relative;
@@ -474,7 +480,6 @@ margin-bottom: 200px;
 
   
   .theme h1 { 
-    width: fit-content;
     opacity: 0.8;
     margin-top: 0;
     font-weight: 1000;
@@ -487,13 +492,11 @@ margin-bottom: 200px;
     transition: 1sec;
   }
   .theme h3{
-    width: fit-content;
     opacity: 0.9;
     color: #2ddb98;
     font-size: 35px;
   }
 .theme p {
-    width: fit-content;
     max-width: 600px;
     font-weight: 250;
     font-size: 1.7em;
@@ -507,6 +510,13 @@ margin-bottom: 200px;
     transition: 1.5s;
   }
 
+  
+  .theme-img1{
+    width: 40vw;
+    height: auto;
+    position: absolute;
+    left: 56%;
+  }
 
 
  .aboutus .h3date{
@@ -514,6 +524,7 @@ margin-bottom: 200px;
   padding: 5px 0px 5px 0px;
   font-size: 1.3em;
   }
+
 
 .spflower{
   animation: rotation 1.7s linear infinite;
@@ -556,8 +567,19 @@ margin-bottom: 200px;
   box-shadow: 0px 3px 3ch 3px #c66bf8;
 }
 
+.registercontainer{
 
-
+  display: flex;
+  align-items: center;
+}
+.regimg img{
+  box-shadow: 0px 0px 2ch 0px #ff3c7b;
+  margin-left: 8vw;
+  margin-right:8vw ;
+  border-radius: 8px;
+  width: 35vw;
+  height: auto;
+}
 
 /* Contact Us form */
 
@@ -578,7 +600,7 @@ margin-bottom: 200px;
 }
 .inputbox{
     position: relative;
-    width: 400px;
+    width: 28vw;
 }
 .inputbox input{
   position: relative;
@@ -695,29 +717,3 @@ margin-bottom: 200px;
 .about-img:hover{
   animation: mymove 30s infinite;
 }
-
-.theme-img{
-  float:right;
-  width:550px;
-  margin-top: 200px;
-  margin-right: -50px;
-}
-
-@keyframes example {
-  0%   {right:0px;}
-  25%  {right:200px;}
-  50%  {right:200px;}
-  75%  {right:0px;}
-  100% {right:0px;}
-}
-.theme-img1{
-  position: absolute;
-  float:right;
-  animation-name: example;
-  animation-duration: 5s;
-  animation-timing-function: linear;
-  animation-delay: 1s;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-}
-
